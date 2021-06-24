@@ -1,0 +1,36 @@
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjetas div{
+    width: 15vw;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFCC00;
+    margin-bottom: 30px;
+    border-radius: 10%;
+    padding: 25px;
+}
+.tarjetas h1{
+    font-size: 1.5em;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    font-family: 'Dela Gothic One', cursive;
+}
+.tarjetas {
+    font-size: .7em;
+}
+dt::after{
+    content:normal;
+    background-color: yellow;
+    height: 100px;
+    width: 100px;;
+}
+dd{
+    color: white;
+    margin: 0;
+    text-align: center;
+}
