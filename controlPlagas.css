@@ -1,18 +1,35 @@
+article > h1 {
+  text-align: center;
+}
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 1em;
 }
 
 .tarjetas div {
   width: 15vw;
   height: 25vw;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #ffcc00;
+  background-color: rgb(233, 220, 118);
   margin-bottom: 30px;
   border-radius: 10%;
   padding: 1em;
+  position: relative;
+  border: 0.3em black solid;
 }
+
+.tarjetas {
+  font-size: 1em;
+}
+.tarjetas i {
+  display: inline-block;
+  font-size: 5em;
+  margin-left: 0.5em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
 .tarjetas h1 {
   font-size: 1.5em;
   margin: 10px;
@@ -20,11 +37,23 @@
   text-align: center;
   font-family: "Dela Gothic One", cursive;
 }
-.tarjetas {
-  font-size: 1em;
-}
-.tarjetas ul {
+
+.tarjetas ul,
+p {
   padding: 0 2em;
+  display: none;
+  color: #ffcc00;
+}
+.tarjetas > div:hover i {
+  display: none;
+}
+.tarjetas > div:hover ul {
+  display: block;
+  color: black;
+}
+.tarjetas > div:hover p {
+  display: block;
+  color: black;
 }
 dt::after {
   content: normal;

@@ -27,6 +27,8 @@ header {
   top: 0px;
   right: 0px;
   z-index: 1;
+  padding: 0.5em 0.1em;
+  border-bottom: 0.4em black solid;
 }
 header h1 {
   font-size: 2em;
@@ -51,16 +53,14 @@ nav a {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
-  transition: ease-in;
-  transition-duration: 0.5s;
 }
 nav a:hover {
   text-decoration: underline;
-  background-color: bisque;
+  font-weight: bolder;
 }
 .current {
-  text-decoration: underline;
-  background-color: bisque;
+  background-color: rgb(233, 220, 118);
+  padding: 0.5em;
 }
 main {
   position: relative;
@@ -80,7 +80,7 @@ footer {
   top: 8em;
   background-color: black;
   width: 90vw;
-  right: 4.5em;
+  right: 4em;
   padding-top: 0.5em;
   margin-top: 1em;
   padding-bottom: 0.5em;
